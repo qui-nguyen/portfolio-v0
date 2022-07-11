@@ -109,3 +109,8 @@ body {
     transform: translateY(0);
     transition: 1s cubic-bezier(.5,.45,.03,.84);
 }
+
+.project-img {
+    height: 240px !important;
+    width: 400px !important;
+}
