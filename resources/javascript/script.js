@@ -1,4 +1,4 @@
-const ratio = 0.3;
+/*const ratio = 0.3;
 const options = {
   root: null,
   rootMargin: '0px',
@@ -20,3 +20,8 @@ observer.observe(
     observer.observe(reveal);
   })
 );
+*/
+
+
+
+

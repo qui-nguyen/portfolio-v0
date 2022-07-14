@@ -2,504 +2,310 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Bootstrap CSS Font-->
-  <link rel="stylesheet" href="resources/stylesheets/style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://kit.fontawesome.com/a41e9403cf.js" crossorigin="anonymous"></script>
-  <title>qui-nguyen</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS Font-->
+    <link rel="stylesheet" href="resources/stylesheets/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a41e9403cf.js" crossorigin="anonymous"></script>
+    <title>qui-nguyen</title>
 
 </head>
 
 <body>
 
 
-  <!-- Content -->
-
-  <!-- Navbar Component -->
-  <div class="container">
-    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="/">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light sticky-top">
+        <a href="/">
+            <img class="logo" src="./resources/images/react.png" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" href="#presentation">Présentation</a>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projets</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#formation">Formation</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#presentation">Présentation</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#formation">Formation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
         </div>
-      </div>
     </nav>
-  </div>
-  <div class="container container-body mt-5">
-    <!-- Presentation -->
-    <hr>
-    <div id="presentation" class="row pl-3 bg-secondary text-white">
-      <h4 class="text-center m-2">Présentation</h4>
-    </div>
-    <hr>
-    <div class="row d-flex justify-content-space-evenly mt-4">
-      <div class="col-12 col-md-2 justify-content-center align-items-center d-flex">
-        <img id="portrait" src="resources/images/Portrait_Qui_4x4_smaller.jpg" alt="Portrait_Qui">
-      </div>
 
-      <div class=" col-12 col-md-5 ">
-        <figure>
-          <blockquote class="blockquote mb-4">
-            <p class="text-center-left">
-              <i class="fas fa-quote-left fa-lg text-warning me-2"></i>
-              <span class="font-italic">Je suis biochimiste et je suis en reconversion en informatique.
-                Actuellement, je suis en recherche une opportinuté de stage ou d'emploi en
-                développement Full Stack JavaScript.
-                J’ai profité des projets au cours de ma formation pour découvrir le monde de l’informatique et
-                des données.
-                En souhaitant de mettre en place mon projet professionnel, je poursuis mes études en suivant une
-                formation
-                bootcamp de 10 semaines chez La Capsule pour devenir une développeuse.
-              </span>
-              <i class="fas fa-quote-right fa-lg text-warning me-2"></i>
-            </p>
-          </blockquote>
-          <figcaption class="blockquote-footer text-white">
-            Qui Nguyen <cite title="Source Title">Developpeuse Fullstack JS</cite>
-          </figcaption>
-      </div> 
-    </div>
-    <hr>
-
-    <!-- Skills -->
-    <div class="reveal">
-      <div id="skill" class="row pl-3 bg-secondary text-white">
-        <h4 class="text-center m-2">Compétences</h4>
-      </div>
-      <hr>
-      <!-- Languages -->
-      <div class="row mb-3">
-        <div class="col-12 col-md-3">
-          <h5>Langages informatiques</h5>
-        </div>
-        <div class="col-12 col-md-3">
-          <div class="row">
-            <div class="col-6 col-md-6">Javascript</div>
-            <div class="col-6 col-md-6">
-              <div class="progress">
-                <div class="progress-bar bg-info" role="progressbar" style="width: 60%" aria-valuenow="50"
-                  aria-valuemin="0" aria-valuemax="100">60%</div>
-              </div>
+    <div class="wrapper">
+        <!-- Presentation -->
+        <div id="presentation" class="presentation p-3">
+            <div class="">
+                <img src="./resources/images/Portrait_Qui_4x4_smaller.jpg" alt="Personal photo Qui Nguyen"
+                    class="portrait mb-2">
             </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-3">
-          <div class="row">
-            <div class="col-6">HTML/CSS</div>
-            <div class="col-6">
-              <div class="progress">
-                <div class="progress-bar bg-info" role="progressbar" style="width: 60%" aria-valuenow="50"
-                  aria-valuemin="0" aria-valuemax="100">60%</div>
-              </div>
+            <div class="typing">
+                Bonjour, je m'appelle Thanh Qui
             </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-3">
-          <div class="row">
-            <div class="col-6">Python</div>
-            <div class="col-6">
-              <div class="progress">
-                <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50"
-                  aria-valuemin="0" aria-valuemax="100">50%</div>
-              </div>
+            <div class="presentation presentation-center">
+                <figure>
+                    <blockquote class="blockquote mb-4">
+                        <p class="text-center-left">
+                            <i class="fas fa-quote-left fa-lg text-warning me-2"></i>
+                            <span class="font-italic">Je suis biochimiste et je suis en reconversion en informatique.
+                                Actuellement, je suis en recherche une opportinuté de stage ou d'emploi en
+                                développement Full Stack JavaScript.
+                                J’ai profité des projets au cours de ma formation pour découvrir le monde de
+                                l’informatique
+                                et
+                                des données.
+                                En souhaitant de mettre en place mon projet professionnel, je poursuis mes études en
+                                suivant
+                                une
+                                formation
+                                bootcamp de 10 semaines chez La Capsule pour devenir une développeuse.
+                            </span>
+                            <i class="fas fa-quote-right fa-lg text-warning me-2"></i>
+                        </p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        Qui Nguyen <cite title="Source Title">Developpeuse Fullstack JS</cite>
+                    </figcaption>
+                </figure>
             </div>
-          </div>
-        </div>
-      </div>
-      <!-- Framworks, CMS, APIs -->
-      <div class="row mb-3">
-        <div class="col-12 col-md-3">
-          <h5>Framworks, CMS, APIs</h5>
-        </div>
-        <div class="col-12 col-md-3">
-          <div class="row">
-            <div class="col-6">React/Redux</div>
-            <div class="col-6">
-              <div class="progress">
-                <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="50"
-                  aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-3">
-          <div class="row">
-            <div class="col-6">React Native</div>
-            <div class="col-6">
-              <div class="progress">
-                <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="50"
-                  aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-3">
-          <div class="row">
-            <div class="col-6">Bootstrap</div>
-            <div class="col-6">
-              <div class="progress">
-                <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="50"
-                  aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Serveurs applicatif/Web -->
-      <div class="row mb-3">
-        <div class="col-12 col-md-3">
-          <h5 class="">Serveurs applicatif/Web</h5>
-        </div>
-        <div class="col-12 col-md-3">
-          <div class="row">
-            <div class="col-6">Nodejs</div>
-            <div class="col-6">
-              <div class="progress">
-                <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="70"
-                  aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-3">
-          <div class="row">
-            <div class="col-6">Express.js</div>
-            <div class="col-6">
-              <div class="progress">
-                <div class="progress-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="50"
-                  aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-3">
-          <div class="row">
-            <div class="col-6">Jupyter Notebook</div>
-            <div class="col-6">
-              <div class="progress">
-                <div class="progress-bar bg-warning" role="progressbar" style="width: 70%" aria-valuenow="50"
-                  aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- SGBD -->
-      <div class="row mb-3">
-        <div class="col-12 col-md-3">
-          <h5>SGBD</h5>
-        </div>
-        <div class="col-12 col-md-3">
-          <div class="row">
-            <div class="col-6">MongoDB</div>
-            <div class="col-6">
-              <div class="progress">
-                <div class="progress-bar bg-danger" role="progressbar" style="width: 60%" aria-valuenow="70"
-                  aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-3">
-          <div class="row">
-            <div class="col-6">MySQL</div>
-            <div class="col-6">
-              <div class="progress">
-                <div class="progress-bar bg-danger" role="progressbar" style="width: 70%" aria-valuenow="70"
-                  aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-          </div>
         </div>
 
-      </div>
-      <!-- Langues -->
-      <div class="row mb-3">
-        <div class="col-12 col-md-3">
-          <h5 class="">Serveurs applicatif/Web</h5>
-        </div>
-        <div class="col-12 col-md-3">
-          <div class="row">
-            <div class="col-6">Français</div>
-            <div class="col-6">
-              <div class="progress">
-                <div class="progress-bar bg-dark" role="progressbar" style="width: 80%" aria-valuenow="70"
-                  aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+        <!-- Projects-->
+        <div class="projects">
+            <div id="projects" class="row pl-3">
+                <h1 class="text-center m-2">Projets</h1>
             </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-3">
-          <div class="row">
-            <div class="col-6">Anglais</div>
-            <div class="col-6">
-              <div class="progress">
-                <div class="progress-bar bg-dark" role="progressbar" style="width: 60%" aria-valuenow="50"
-                  aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+            <div class="container container-card">
+                <div class="row justify-content-evenly">
+                    <!-- My Moviz Project -->
+                    <div class="col-12 col-lg-5 card">
+                        <iframe src="https://www.youtube.com/embed/_YvwbJi01gI" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                        <div class="card-infos">
+                            <h2>My Moviz</h2>
+                            <p>Application qui permet de proposer une liste de dernières sorties cinéma
+                                et de créer votre propre “whislist”.</p>
+                            <div class="row text-center my-3">
+                                <div class="col-4">
+                                    <img class="project-skill" src="resources/images/react.png" alt="html">
+                                </div>
+                                <div class="col-4">
+                                    <img class="project-skill" src="resources/images/css2.png" alt="css">
+                                </div>
+                                <div class="col-4">
+                                    <img class="project-skill" src="resources/images/js2.png" alt="js">
+                                </div>
+                            </div>
+                            <div class="card-btns">
+                                <a class="btn-card" href="https://mymoviz00.herokuapp.com/"
+                                    target="_blank">Découvrir</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ticketac Project -->
+                    <div class="col-12 col-lg-5 card">
+                        <iframe src="https://www.youtube.com/embed/DT77UXPDol8" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <div class="card-infos">
+                            <h2>Hackathon - Ticketac</h2>
+                            <p>Projet de Hakathon de 2 jours pour créer un site de réservation
+                                de billets de train avec les sessions</p>
+                            <div class="row text-center my-3">
+                                <div class="col-4">
+                                    <img class="project-skill" src="resources/images/html.png" alt="html">
+                                </div>
+                                <div class="col-4">
+                                    <img class="project-skill" src="resources/images/css2.png" alt="css">
+                                </div>
+                                <div class="col-4">
+                                    <img class="project-skill" src="resources/images/js2.png" alt="js">
+                                </div>
+                            </div>
+                            <div class="card-btns">
+                                <a class="btn-card" href="https://ticketac00.herokuapp.com/homepage"
+                                    target="_blank">Découvrir</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Weather App Project -->
+                    <div class="col-12 col-lg-5 card">
+                        <iframe src="https://www.youtube.com/embed/s-W8MsTo78A" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <div class="card-infos">
+                            <h2>Weather App</h2>
+                            <p>pplication web permettant d'afficher la météo d'une ville sur une carte interactive
+                                en temps réel</p>
+                            <div class="row text-center my-3">
+                                <div class="col-4">
+                                    <img class="project-skill" src="resources/images/html.png" alt="html">
+                                </div>
+                                <div class="col-4">
+                                    <img class="project-skill" src="resources/images/css2.png" alt="css">
+                                </div>
+                                <div class="col-4">
+                                    <img class="project-skill" src="resources/images/js2.png" alt="js">
+                                </div>
+                            </div>
+                            <div class="card-btns">
+                                <a class="btn-card" href="https://weather-00.herokuapp.com/weather"
+                                    target="_blank">Découvrir</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Bike Shop Project -->
+                    <div class="col-12 col-lg-5 card">
+                        <iframe src="https://www.youtube.com/embed/W6rSbMUcpHo" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <div class="card-infos">
+                            <h2>Bike Shop</h2>
+                            <p>Site e-commerce (hébergé sur Heroku) avec une mécanique de panier et de moyen de
+                                payement (Stripe)</p>
+                            <div class="row text-center my-3">
+                                <div class="col-4">
+                                    <img class="project-skill" src="resources/images/html.png" alt="html">
+                                </div>
+                                <div class="col-4">
+                                    <img class="project-skill" src="resources/images/css2.png" alt="css">
+                                </div>
+                                <div class="col-4">
+                                    <img class="project-skill" src="resources/images/js2.png" alt="js">
+                                </div>
+                            </div>
+                            <div class="card-btns">
+                                <a class="btn-card" href="https://stormy-everglades-94002.herokuapp.com/"
+                                    target="_blank">Découvrir</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Money project -->
+                    <div class="col-12 col-lg-5 card">
+                        <iframe src="resources/images/Lutte_contre_faux_monnayage.png" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <div class="card-infos">
+                            <h2>Lutte contre le faux-monnayage</h2>
+                            <p>Mise en place des méthodes d’identification des contrefaçons des billets en euros</p>
+                            <div class="row text-center my-3">
+                                <div class="col-4">
+                                    <img class="project-skill" src="resources/images/python-logo.webp" alt="python">
+                                </div>
+                                <div class="col-4">
+                                    <img class="project-skill" src="resources/images/Scikit-learn.jpg"
+                                        alt="scikit-learn">
+                                </div>
+                                <div class="col-4">
+                                    <img class="project-skill" src="resources/images/Statmodels.png" alt="statmodels">
+                                </div>
+                            </div>
+                            <div class="card-btns">
+                                <a class="btn-card" href="https://github.com/qui-nguyen/Formation_Data_Anlayst.git"
+                                    target="_blank">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tableau project -->
+                    <div class="col-12 col-lg-5 card">
+                        <iframe src="resources/images/Acces_eau.png" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <div class="card-infos">
+                            <h2>Accès à l'eau potable à tout le monde</h2>
+                            <p>Création un "dashboard" permettant d'identifier les pays qui rencontrent des
+                                difficultés d'accès à l'eau potable</p>
+                            <div class="row text-center my-3">
+                                <div class="col-12">
+                                    <img class="project-skill-tableau" src="resources/images/Tableau.jpg" alt="tableau">
+                                </div>
+                            </div>
+                            <div class="card-btns">
+                                <a class="btn-card"
+                                    href="https://public.tableau.com/app/profile/nguyenthanh.qui/viz/P8_NGUYENHuynhThanhQui/Projet8_Accsleaupotabletoutlemonde_NGUYEN"
+                                    target="_blank">
+                                    Tableau</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-3">
-          <div class="row">
-            <div class="col-6">Vienamienne</div>
-            <div class="col-6">
-              <div class="progress">
-                <div class="progress-bar bg-dark" role="progressbar" style="width: 100%" aria-valuenow="50"
-                  aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Projects -->
-    <div class="reveal">
-      <hr>
-      <div id="projects" class="row pl-3 bg-secondary text-white ">
-        <h4 class="text-center m-2">Projets</h4>
-      </div>
-      <hr>
-      <!-- Cards-->
-      <div class="row p-3 d-flex ">
-        <!-- My Moviz Project -->
-        <div class="col-12 col-lg-4 mx-auto">
-            <div class="row justify-content-center">
-              <iframe width="320" height="240" src="https://www.youtube.com/embed/_YvwbJi01gI" title="YouTube video player" frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-          <div class="card-body">
-            <h4 class="card-text text-center text-info font-weight-bold">My Moviz</h4>
-            <p class="text-center">Application qui permet de proposer une liste de dernières sorties cinéma 
-              et de créer votre propre “whislist”.
-            </p>
-            <div class="row text-center my-3">
-              <div class="col-4">
-                <img class="skills" src="resources/images/react.png" alt="html">
-              </div>
-              <div class="col-4">
-                <img class="skills" src="resources/images/css2.png" alt="css">
-              </div>
-              <div class="col-4">
-                <img class="skills" src="resources/images/js2.png" alt="js">
-              </div>
-            </div>
-            <a href="https://mymoviz00.herokuapp.com/" class="btn btn-primary text-center btn-center">Découvrir</a>
-
-          </div>
-        </div>
-        <!-- Ticketac Project -->
-        <div class="col-12 col-lg-4 mx-auto">
-          <div class="row justify-content-center">
-            <iframe width="320" height="240" src="https://www.youtube.com/embed/DT77UXPDol8" title="YouTube video player" frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <div class="card-body">
-            <h4 class="card-text text-center text-info font-weight-bold">Hackathon - Ticketac</h4>
-              <p class="text-center">Projet de Hakathon de 2 jours pour créer un site de réservation
-                de billets de train avec les sessions</p>
-            <div class="row text-center my-3">
-              <div class="col-4">
-                <img class="skills" src="resources/images/html.png" alt="html">
-              </div>
-              <div class="col-4">
-                <img class="skills" src="resources/images/css2.png" alt="css">
-              </div>
-              <div class="col-4">
-                <img class="skills" src="resources/images/js2.png" alt="js">
-              </div>
-            </div>
-            <a href="https://ticketac00.herokuapp.com/homepage"
-              class="btn btn-primary text-center btn-center">Découvrir</a>
-
-          </div>
-        </div>
-        <!-- Weather App Project -->
-        <div class="col-12 col-lg-4 mx-auto">
-          <div class="row justify-content-center">
-            <iframe width="320" height="240" src="https://www.youtube.com/embed/s-W8MsTo78A" title="YouTube video player" frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <div class="card-body">
-            <h4 class="card-text text-center text-info font-weight-bold">Weather App</h4>
-            <p class="text-center">Application web permettant d'afficher la météo d'une ville sur une carte interactive
-              en temps réel</p>
-            <div class="row text-center my-3">
-              <div class="col-4">
-                <img class="skills" src="resources/images/html.png" alt="html">
-              </div>
-              <div class="col-4">
-                <img class="skills" src="resources/images/css2.png" alt="css">
-              </div>
-              <div class="col-4">
-                <img class="skills" src="resources/images/js2.png" alt="js">
-              </div>
-            </div>
-            <a href="https://weather-00.herokuapp.com/weather"
-              class="btn btn-primary text-center btn-center">Découvrir</a>
-          </div>
-        </div>
-        <!-- Bike Shop Project -->
-        <div class="col-12 col-lg-4 mx-auto">
-          <div class="row justify-content-center">
-          <iframe width="320" height="240" src="https://www.youtube.com/embed/W6rSbMUcpHo" title="YouTube video player" frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-          <div class="card-body">
-            <h4 class="card-text text-center text-info font-weight-bold">Bike Shop</h4>
-            <p class="text-center">Site e-commerce (hébergé sur Heroku) avec une mécanique de panier et de moyen de
-              payement (Stripe)</p>
-            <div class="row text-center my-3">
-              <div class="col-4">
-                <img class="skills" src="resources/images/html.png" alt="html">
-              </div>
-              <div class="col-4">
-                <img class="skills" src="resources/images/css2.png" alt="css">
-              </div>
-              <div class="col-4">
-                <img class="skills" src="resources/images/js2.png" alt="js">
-              </div>
-            </div>
-            <a href="https://stormy-everglades-94002.herokuapp.com/"
-              class="btn btn-primary text-center btn-center">Découvrir</a>
-
-          </div>
-        </div>
-        <!-- Money project -->
-        <div class="col-12 col-lg-4 mx-auto">
-          <img class="project-img" class="card-img-top rounded mx-auto d-block"
-            src="resources/images/Lutte_contre_faux_monnayage.png" alt="Card image cap">
-          <div class="card-body">
-            <h4 class="card-text text-center text-info font-weight-bold">Lutte contre le faux-monnayage</h4>
-            <p class="text-center">Mise en place des méthodes d’identification des contrefaçons des billets en euros</p>
-            <div class="row text-center my-3">
-              <div class="col-4">
-                <img class="skills" src="resources/images/python-logo.webp" alt="python">
-              </div>
-              <div class="col-4">
-                <img class="skills" src="resources/images/Scikit-learn.jpg" alt="scikit-learn">
-              </div>
-              <div class="col-4">
-                <img class="skills" src="resources/images/Statmodels.png" alt="statmodels">
-              </div>
-            </div>
-            <a href="https://github.com/qui-nguyen/Formation_Data_Anlayst.git"
-              class="btn btn-primary text-center btn-center">GitHub</a>
-          </div>
-        </div>
-        <!--  Tableau project -->
-        <div class="col-12 col-lg-4 mx-auto">
-          <img class="project-img" class="card-img-top rounded mx-auto d-block" src="resources/images/Acces_eau.png"
-            alt="Card image cap">
-          <div class="card-body">
-            <h4 class="card-text text-center text-info font-weight-bold">Accès à l'eau potable à tout le monde</h4>
-            <p class="text-center">Création un "dashboard" permettant d'identifier les pays qui rencontrent des
-              difficultés d'accès à l'eau potable</p>
-            <div class="row text-center my-3">
-              <div class="col-12">
-                <img class="skills" src="resources/images/Tableau.jpg" alt="tableau">
-              </div>
-            </div>
-            <a href="https://public.tableau.com/app/profile/nguyenthanh.qui/viz/P8_NGUYENHuynhThanhQui/Projet8_Accsleaupotabletoutlemonde_NGUYEN"
-              class="btn btn-primary text-center btn-center">Tableau</a>
-          </div>
         </div>
 
-      </div>
+        <!-- Skills-->
+        <div id="skills" class="skills">
+            <h1>Skills</h1>
+            <div class="row justify-content-evenly">
+                <div class="col-5 col-md-2 fab-skills" style="color: #e34c26 ">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <div class="col-5 col-md-2 fab-skills" style="color: #264de4 ">
+                    <i class="fab fa-css3"></i>
+                </div>
+                <div class="col-5 col-md-2 fab-skills" style="color: #f0db4f  ">
+                    <i class="fab fa-js-square"></i>
+                </div>
+                <div class="col-5 col-md-2 fab-skills" style="color: #61dafb ">
+                    <i class="fab fa-react"></i>
+                </div>
+            </div>
+        </div>
+
+        <div id="formation" class="formations">
+            <h1>Formations</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
     </div>
 
-    <!-- Formation -->
-    <div class="reveal">
-      <hr>
-      <div id="formation" class="row pl-3 bg-secondary text-white ">
-        <h4 class="text-center m-2">Formation</h4>
-      </div>
-      <hr>
-      <div class="row text-center m-3">
-        <div class="row m-auto">
-          <div class="col-6">
-            <h5 class="font-weight-bold">Master Biochimie Structurale et Fonctionnelle</h5>
-          </div>
-          <div class="col-2">
-            <h5>2012-2017</h5>
-          </div>
-          <div class="col-4">
-            <h5>Université Claude Bernard Lyon 1</h5>
-          </div>
+
+    <footer class="sticky-bottom">
+        <div class="footer-info">
+            <a target="_blank" href="https://github.com/qui-nguyen"><i class="fab fa-github-square" style="color: #4078c0"></i></a>
+            <a target="_blank" href="https://linkedin.com/in/thanh-qui-nguyen"><i class="fab fa-linkedin"   style="color:#0072b1"></i></a>
         </div>
+        <p class="footer-copyright">©Qui Nguyen 2022</p>
+    </footer>
 
-        <div class="row m-auto">
-          <div class="col-6">
-            <h5 class="font-weight-bold ml">Data Analyst</h5>
-          </div>
-          <div class="col-2">
-            <h5>2021-2022</h5>
-          </div>
-          <div class="col-4">
-            <h5>Openclassrooms</h5>
-          </div>
-        </div>
-        <div class="row m-auto">
-          <div class="col-6">
-            <h5 class="font-weight-bold">En formation "Développeur FullStack JavaScript"</h5>
-          </div>
-          <div class="col-2">
-            <h5>06-08/2022</h5>
-          </div>
-          <div class="col-4">
-            <h5>La Capsule</h5>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Contact -->
-    <div class="reveal">
-      <hr>
-      <div id="contact" class="row pl-3 bg-secondary text-white ">
-        <h4 class="text-center m-2">Contact</h4>
-      </div>
-      <hr>
-    </div>
-  </div>
-  </div>
-
-
-
-
-  <!-- Bootstrap's JavaScript Files -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-  <script src="./resources/javascript/script.js"></script>
+    <!-- Bootstrap's JavaScript Files -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./resources/javascript/script.js"></script>
 </body>
 
 </html>
