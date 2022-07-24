@@ -136,12 +136,13 @@
 
 .content {
   padding: 20px 30px;
-  background-color: white;
+  background-color: #ecebf4;
   position: relative;
   border-radius: 5px;
   transform: scale(1);
   transition: 0.3s ease-in-out;
   box-shadow: 0 0 15px rgb(0 0 0 / 20%);
+  color: #0e172c !important
 }
 
 .content:hover {
@@ -180,7 +181,7 @@
   text-align: center;
   font-size: 3rem !important;
   padding: 2% 0%;
-  color: #f18c81;
+  color: #0e172c;
   text-shadow: 2px 0 #464444;
 }
 
