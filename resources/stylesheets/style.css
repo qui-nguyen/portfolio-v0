@@ -151,7 +151,7 @@ footer {
 }
 
 .navbar {
-  background-color: #5F6377 !important;
+  background-color: #5f6377 !important;
 }
 
 .navbar-nav {
@@ -255,6 +255,12 @@ footer {
 .card-btns {
   display: flex;
   justify-content: space-around;
+}
+
+.badge {
+  background-color: #c3f0ca;
+  color: #33272a !important;
+  height: 2rem;
 }
 
 a {
